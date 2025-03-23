@@ -1,6 +1,16 @@
 import java.util.ArrayList;
 
 
+/**
+ * SharedData is a class that stores the shared data between threads in the
+ * subset sum problem. It holds the array of integers, the target sum value,
+ * a result array indicating which elements contribute to the sum,
+ * and a flag indicating whether a solution has been found.
+ * 
+ * This class provides synchronization mechanisms to safely coordinate
+ * between multiple threads working on the same problem.
+
+ */
 public class SharedData {
     private ArrayList<Integer> array;
     private boolean[] winArray;
